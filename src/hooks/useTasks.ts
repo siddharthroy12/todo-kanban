@@ -26,7 +26,7 @@ export const useCreateTask = () => {
     onMutate: (task) => {
       // Generate random id for optimistic update which will be set to the correct one after re-validation
       // @ts-ignore
-      task.id = Math.random() * 1000;
+      task.id = Math.ceil(Math.random() * 1000);
 
       const previous = queryClient.getQueryData([key]);
 

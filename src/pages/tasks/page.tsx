@@ -52,6 +52,7 @@ export function Tasks() {
   function handleDragEnd(event: DragEndEvent) {
     setActiveId(null);
     const split = event.over?.id.toString().split("-")!;
+
     if (split) {
       // Find source and destination
       const destSide = split[0] === "true";

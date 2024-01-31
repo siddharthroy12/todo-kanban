@@ -1,4 +1,4 @@
-import { ThemeToggle } from "./components.tsx/theme-toggle";
+import { ThemeToggle } from "./components/theme-toggle";
 
 export function Settings() {
   return (
